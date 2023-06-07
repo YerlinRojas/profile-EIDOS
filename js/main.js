@@ -1,26 +1,14 @@
-/* console.log('¡Hola mundo!');
+document.getElementById('boton-descargar').addEventListener('click', function() {
+    // URL del documento que deseas descargar
+    var url = './YerlinRojas200-.pdf';
 
-let num1 = 50;
-let num2 = 10;
-let saludo = '¡Hola soy yer!';
-let nombreCurso = 'Código LATAM COMI 11';
-let resultadoSuma = num1 + num2;
-let resultadoResta = num1 - num2;
-let resultadoMultiplicacion = num1 * num2;
+    // Crea un enlace temporal
+    var link = document.createElement('a');
+    link.href = url;
 
-console.log(resultadoSuma);
-console.log(resultadoResta);
-console.log(resultadoMultiplicacion);
-console.log(saludo + 'Esto es ' + nombreCurso); */
+    // Establece el nombre del archivo
+    link.download = './YerlinRojas200-.pdf';
 
-
-function despegar (i){
-    
-for (let i= 10; i >= 0; i-- ){
-    console.log (i)
-}if (i >= 0)
-    console.log("Despegamos!!")
-}
-
-despegar (10)
-
+    // Simula un clic en el enlace para descargar el archivo
+    link.click();
+})
