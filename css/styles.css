@@ -28,44 +28,25 @@ a {
     color: inherit;
 }
 
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
 
-
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
-*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-*
-*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-*
-*  - Usen mucho las herramientas para desarrolladores del navegador para ir
-*    probando el CSS que escriben, resolver dudas y problemas.
-*
-*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-*/
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(130, 88, 130);
  
     
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 90px;
+    background-color: black;
     position: fixed;
-    top: 0;
-    background-color: rgb(243, 246, 252);
-    width: 100%;
+    top: 0; 
+    box-shadow: 0 5px 5px rgba(243, 241, 241, 0.5);
+    width: 82%;
+}
+
+.header-img{
+    margin-left:30% ;
 }
 
 main{
@@ -73,17 +54,15 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 95px;
+    margin-top: 180px;
 }
 
-.logo-size {
-    height: 50px;
-    width: auto;
-}
+
 
 .contenedor-profile{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 30%  auto;
+    grid-template-rows: auto;
     justify-content:center;
     align-items: center;
     margin-bottom: 30px;
@@ -111,27 +90,35 @@ h2 {
 
 }
 
+.text-fount{
+    color: white;
+    
+}
+
 .img-fluid{
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
-    margin-left: 21%;
+    width: 60%;
+    box-shadow: 0 5px 5px rgba(161, 161, 161, 0.5);
+
 }
 
 .contenedor-talk{
     display: flex;
-    width: 70%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5%;
-    background-color: rgb(219, 239, 242);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(153, 153, 153);
+    color:white ;
     box-shadow: 0 5px 5px rgba(161, 161, 161, 0.5);
  
 }
 
 .contenedor-icon{
     display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -149,7 +136,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(243, 246, 252);
-    color: rgb(9, 9, 9);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     height: 95px;
 }
