@@ -1,52 +1,72 @@
-/* En este archivo escriban su CSS */
 
-/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-/* Importar aquí la font */
 
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
+@media screen and (max-width: 1900px) {
 
-/* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
 }
 
-/* Para quitar los puntos a los items de listas */
 ul {
     list-style: none;
 }
 
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+
+
 a {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
-
-
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(130, 88, 130);
- 
-    
+    background-color: rgb(245, 245, 245);
 }
+
+.navbar{
+    background-color: transparent;
+}
+
+.navbar-nav{
+    border-radius: 5px;
+    background-color: black;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link{
+    color: rgb(245, 245, 245);
+
+}
+
+.navbar-nav:hover {
+    background-color: #fefefe;
+    border-radius: 5px;
+  }
+
+  .nav-link:hover{
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+  }
+
+  .container-fluid{
+    background-color: transparent;
+  }
 
 header {
-    background-color: black;
+
     position: fixed;
     top: 0; 
-    box-shadow: 0 5px 5px rgba(243, 241, 241, 0.5);
+    
     width: 82%;
-}
-
-.header-img{
-    margin-left:30% ;
+    height: 10%;
 }
 
 main{
@@ -54,9 +74,8 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 180px;
+    margin-bottom: 95px;
 }
-
 
 
 .contenedor-profile{
@@ -65,9 +84,10 @@ main{
     grid-template-rows: auto;
     justify-content:center;
     align-items: center;
-    margin-bottom: 30px;
     gap: 25px;
-    
+    margin-top: 170px;
+    margin-bottom: 170px;
+    scroll-margin-top: 150px;
 }
 
 h1 {
@@ -81,8 +101,6 @@ h2 {
 .text-boton{
     width: max-content;
     padding: 5% 2% 5% 2%;
-    border-radius: 45%;
-    background-color: rgb(162, 127, 196);
     font-size: 20px;
     color: white;
     font-weight: 700;
@@ -91,13 +109,14 @@ h2 {
 }
 
 .text-fount{
-    color: white;
+    color: rgb(126, 126, 126);
     
 }
 
 .img-fluid{
-    width: 60%;
+    width: 70%;
     box-shadow: 0 5px 5px rgba(161, 161, 161, 0.5);
+    border-radius: 5px;
 
 }
 
@@ -112,6 +131,8 @@ h2 {
     background-color: rgb(153, 153, 153);
     color:white ;
     box-shadow: 0 5px 5px rgba(161, 161, 161, 0.5);
+    border-radius: 25px;
+    scroll-margin-top: 50px;
  
 }
 
@@ -139,4 +160,11 @@ footer {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     height: 95px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
 }

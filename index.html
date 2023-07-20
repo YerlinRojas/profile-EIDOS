@@ -1,65 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Yerlin Rojas</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yerlin Rojas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-    <body class="container">
-        <header>
-            <img class="header-img" src="./img/PortadaYRLkn.gif" width="40%">
-        </header>
-        <main>
-            <div class="contenedor-profile">
+<body class="container">
+    <header>
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#profile">Profile</a>
+                        <a class="nav-link" href="#about">About me</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
 
-                <div><img class="img-fluid"
-                        src="/img/2YerlinProfile.jpeg" alt="profile" width="50px">
-                        </div>
+        <div id="profile" class="contenedor-profile">
+            <div>
+                <img class="img-fluid" src="/img/2YerlinProfile.jpg" alt="profile" width="80px" />
+            </div>
 
             <div>
                 <h3 class="text-fount">Yerlin ROJAS</h3>
                 <p class="text-fount">Arquitecta aprendiendo a Programar</p>
-                <button id="boton-descargar" type="button" class="btn btn-outline-secondary">Te comparto mi CV</button>
+                <button id="boton-descargar" type="button" class="btn btn-outline-secondary">
+                    CV
+                </button>
+                <button id="boton-descargarPL" type="button" class="btn btn-outline-secondary">
+                    Presentation Letter
+                </button>
             </div>
-                
+        </div>
+            
+
+        <div id="about" class="contenedor-talk">
+            <h2>Hablemos</h2>
+            <p>
+                Como arquitecta con experiencia en el diseño y la planificación de
+                proyectos, he llegado a valorar las habilidades técnicas y analíticas
+                que se requieren en el desarrollo de software y la programación. A lo
+                largo de mi trayectoria profesional como arquitecta, he trabajado en
+                proyectos que han involucrado el uso de software especializado y he
+                tenido la oportunidad de familiarizarme con algunos lenguajes de
+                programación básicos. Estos encuentros han despertado mi curiosidad y
+                me han llevado a explorar de manera autodidacta el mundo de la
+                programación. Durante los últimos meses, he invertido tiempo y
+                esfuerzo en aprender más sobre programación a través de cursos en
+                línea, tutoriales y proyectos personales.
+            </p>
+        </div>
+        <div class="contenedor-icon">
+            <div>
+                <a href="https://www.linkedin.com/in/yerlinrojas/"><img class="size-icon" src="./img/linkedin.png"
+                        alt="linkedin" /></a>
             </div>
-            <div class="contenedor-talk">
-                <h2>Hablemos</h2>
-                <p>Como arquitecta con experiencia en el diseño y la
-                    planificación de proyectos, he llegado a valorar las
-                    habilidades técnicas y analíticas que se requieren en el
-                    desarrollo de software y la programación.
-                    A lo largo de mi trayectoria profesional como
-                    arquitecta, he trabajado en proyectos que han
-                    involucrado el uso de software especializado y he tenido
-                    la oportunidad de familiarizarme con algunos lenguajes
-                    de programación básicos. Estos encuentros han despertado
-                    mi curiosidad y me han llevado a explorar de manera
-                    autodidacta el mundo de la programación.
-                    Durante los últimos meses, he invertido tiempo y
-                    esfuerzo en aprender más sobre programación a través de
-                    cursos en línea, tutoriales y proyectos personales. PD: Dejo la foto del kitty, es mas lindo</p>
+            <div>
+                <a href="https://github.com/YerlinRojas"><img class="size-icon" src="./img/github.png"
+                        alt="github" /></a>
             </div>
-            <div class="contenedor-icon">
-                <div><a href="https://www.linkedin.com/in/yerlinrojas/"><img
-                            class="size-icon" src="./img/linkedin.png"
-                            alt="linkedin"></a></div>
-                <div><a href="https://github.com/YerlinRojas"><img
-                            class="size-icon" src="./img/github.png"
-                            alt="github"></a></div>
-                <div><a href="https://www.google.com/intl/es-419/gmail/about/"><img
-                            class="size-icon" src="./img/mail.png" alt="mail"></a></div>
+            <div>
+                <a href="https://www.google.com/intl/es-419/gmail/about/"><img class="size-icon" src="./img/mail.png"
+                        alt="mail" /></a>
             </div>
-        </main>
-        <footer>
-            <h4>Coder YerlinRojas</h4>
-        </footer>
-        <script src="./js/main.js"></script>
-    </body>
+        </div>
+    </main>
+    <footer>
+        
+        <img class="header-img" src="./img/YerlinRojas.gif" width="40%"> 
+
+    </footer>
+    <script src="./js/section-scroll.js"></script>
+    <script src="./js/main.js"></script>
+</body>
 
 </html>
