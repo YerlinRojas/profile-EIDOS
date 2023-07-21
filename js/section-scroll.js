@@ -1,3 +1,14 @@
+  document.querySelectorAll('a[href^="#home"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+
 document.querySelectorAll('a[href^="#profile"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -17,3 +28,14 @@ document.querySelectorAll('a[href^="#profile"]').forEach(anchor => {
       });
     });
   });
+
+  document.querySelectorAll('a[href^="#proyects"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
